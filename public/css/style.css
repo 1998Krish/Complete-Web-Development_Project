@@ -1,0 +1,252 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@300;400;500;600;700;800;900&display=swap");
+
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+/* color define */
+:root {
+  --main_color: #23a9f7;
+  --secondary_color: #fff;
+  --grey_color: rgb(128, 128, 128);
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* navbar style */
+
+.navbar {
+  padding: 2rem 0;
+}
+.navbar a {
+  color: var(--main_color);
+  font-size: 1.8rem;
+}
+.navbar-toggler {
+  background: var(--grey_color);
+}
+.navbar li a {
+  margin-left: 2.5rem;
+}
+.navbar li a:hover{
+  margin-left: 2.5rem;
+}
+
+
+
+
+/* header section style */
+
+.main_header_left {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.main_header_left p {
+  color: var(--secondary_color);
+  font-size: 2rem;
+}
+.main_header_left h1 {
+  color: var(--secondary_color);
+  font-size: 3rem;
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+}
+.main_header_left a .hero_btn {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-radius: 15px;
+  text-transform: uppercase;
+  background: var(--grey_color);
+  color: var(--main_color);
+  box-shadow: 0 8px 6px -6px #000;
+  transition: all 0.3s ease;
+}
+.main_header_left a .hero_btn:hover {
+  box-shadow: 0 8px 6px -6px var(--main_color);
+}
+
+.main_header_left h1 span {
+  color: var(--main_color);
+}
+.main_header_right {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+/* footer style */
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  background: var(--grey_color);
+}
+footer p{
+  margin: 0;
+  text-align: center;
+  color: var(--secondary_color);
+  font-size: 1.8rem;
+  line-height: 5rem;
+}
+
+
+/* About us page */
+
+.main_header_right figure img{
+  filter: drop-shadow(0 0.5rem 1rem rgba(255, 255, 255, 0.9));
+}
+
+
+/* error page */
+.error_page{
+  margin: 10rem auto;
+}
+.error_page img{
+  width: 60rem;
+  border-radius: 20px;
+  box-shadow: -7px 8px 8px -1px rgba(0,0,0,0.3);
+}
+
+
+/* weather page */
+
+.temp_form{
+  width: 60%;
+  margin: 5rem auto;
+  position: relative;
+}
+
+.temp_form input[type="text"]{
+  width: 100%;
+  padding: 2rem 5rem 2rem 2rem;
+  border: none;
+  outline: none;
+  color: var(--secondary_color);
+  background-color: rgb(41, 39, 39);
+  font-size: 1.5rem;
+  border-radius: 2rem;
+}
+::placeholder{
+  color: var(--secondary_color);
+}
+
+.temp_form input[type="submit"]{
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+  border: none;
+  background: var(--main_color);
+  padding: 0 3rem;
+  border-radius: 2rem;
+  color: var(--secondary_color);
+  font-size: 1.8rem;
+  transition: all 0.3s linear;
+}
+.temp_form input[type="submit"]:hover{
+  color: var(--main_color);
+  background: var(--secondary_color);
+}
+
+
+.temp_info{
+  width: 40rem;
+  min-height: 20rem;
+  margin: auto;
+  background-color: rgb(41, 39, 39);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.upper_layer{
+  width: 100%;
+  height: 20%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1.2rem .8rem;
+  background-color: rgb(27, 24, 24);
+  color: var(--secondary_color);
+}
+.upper_layer p{
+  font-size: 1.3rem;
+}
+.main_layer{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.main_layer #city_name{
+  padding: 2rem 0.8rem;
+  color: var(--secondary_color);
+  font-size: 2rem;  
+}
+.main_layer .middle_layer{
+  display: flex;
+  justify-content: space-around;
+  color: var(--secondary_color);
+}
+.main_layer .middle_layer p,
+.main_layer .middle_layer .bi{
+  font-size: 7rem;
+  font-weight: 900;
+}
+.main_layer .middle_layer .bi{
+  color: var(--main_color);
+}
+
+.data_hide{
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+/* Responsive code */
+
+@media(max-width:768px){
+  .main_header_left{
+    height: auto;
+    margin: 10rem 0;
+   display: flex;
+   align-items: center;
+   text-align: center;
+  }
+  .main_header_right{
+    height: auto;
+  }
+  .temp_form{
+    width: auto;
+  }
+  .temp_info{
+    width: auto;
+  }
+}
+
+@media(max-width:468px){
+  .main_header_right{
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("../partials/head.ejs")%>
+</head>
+<body>
+    <!-- navbar -->
+    <%- include("../partials/navbar.ejs")%>
+
+    <!-- Main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-5 col-12 main_header_right">
+                        <figure>
+                            <img src="./images/about.png" class="img-fluid" alt="about">
+                        </figure>
+                    </div>
+                    <div class="col-md-7 col-12 main_header_left">
+                        <p>Welcome to Mohit Codes</p>
+                        <h1>I am a <span>Fullstack</span> Developer From India</h1>
+                        <a href="/"><button class="hero_btn">About Me</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <%- include("../partials/footer.ejs")%>
+</body>
+</html>

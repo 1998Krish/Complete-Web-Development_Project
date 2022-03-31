@@ -1,0 +1,16 @@
+{
+  "name": "1.-stromm-application--give-a-real-time-weather-updates",
+  "version": "1.0.0",
+  "description": "Stromm is real time weather application which gives weather updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mg_Codes",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

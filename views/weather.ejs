@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta information -->
+    <%- include("../partials/head.ejs")%>
+</head>
+<body>
+    <!-- navbar -->
+    <%- include("../partials/navbar.ejs")%>
+
+    <!-- Main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                
+                <div class="temp_container">
+                    <form class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter Your City Here..." autocomplete="off">
+                        <input type="submit" value="search" id="submit_btn">
+                    </form>
+                </div>
+                <div class="temp_info">
+                    <div class="upper_layer">
+                        <p id="day">Tuesday</p>
+                        <p id="date">13 oct</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Output will be here</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span class="temp_degree">0</span><sup>o</sup>C</p>
+                            <p id="temp_status"><i class="bi bi-brightness-high-fill"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <%- include("../partials/footer.ejs")%>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
